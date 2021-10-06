@@ -3,12 +3,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import br.com.alura.model.Conexao;
+
 public class TestaConexao {
 
 	public static void main(String[] args) throws SQLException {
 
-		ConnectionFactory conexao = new ConnectionFactory();
-		Connection con = conexao.getConexao();
+		Conexao conexao = new Conexao();
+		Connection con = DriverManager.
+				getConnection(conexao.getConnectionParam(), conexao.getUserName(),
+						conexao.getPassword());
+
 		con.close();
 	}
 

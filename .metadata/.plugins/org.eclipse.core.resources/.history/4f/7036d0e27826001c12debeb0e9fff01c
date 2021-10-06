@@ -6,12 +6,16 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
+import br.com.alura.model.Conexao;
+
 public class TestaListagem {
 
 	public static void main(String[] args) throws SQLException {
 
-		ConnectionFactory conexao = new ConnectionFactory();
-		Connection con = conexao.getConexao();
+		Conexao conexao = new Conexao();
+		Connection con = DriverManager.
+				getConnection(conexao.getConnectionParam(), conexao.getUserName(),
+						conexao.getPassword());
 
 		Statement stm = con.createStatement();
 		stm.execute("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
