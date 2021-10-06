@@ -1,0 +1,14 @@
+
+public class Conexao {
+
+	private String connectionParam;
+	private String userName;
+	private String Password;
+
+	public String getConnectionParam() {
+		return "jdbc:mysql://localhost/loja_virtual?useTimezone=true&serverTimezone=UTC", "root", "InsiraSenha";
+	}
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class TestaListagem {
+
+	
+	Conexao conexao = new Conexao();
+	Connection con = DriverManager.
+			getConnection(conexao.getConnectionParam(), conexao.getUserName(),
+					conexao.getPassword());
+
+	con.close();
+	
+}

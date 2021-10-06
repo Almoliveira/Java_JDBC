@@ -1,0 +1,20 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class TestaListagem {
+
+	
+	Connection con;
+	try {
+		con = DriverManager.
+				getConnection(Conexao.getConnectionParam(), Conexao.getUserName(),
+						Conexao.getPassword());
+		con.close();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}
