@@ -27,13 +27,12 @@ public class TesteInsercaoComParametro {
 		
 		connection.commit();
 		
-
+		}
 		connection.close();
 		}catch (Exception er) {
 			er.printStackTrace();
 			System.out.println("ROLLBACK EXECUTADO");
 			connection.rollback();
-		}
 		}
 	}
 

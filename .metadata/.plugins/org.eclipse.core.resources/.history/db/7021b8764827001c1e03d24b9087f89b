@@ -9,12 +9,13 @@ import java.sql.Statement;
 public class TesteInsercaoComParametro {
 
 	public static void main(String[] args) throws SQLException {
-
+		
+		String nome = "Monitor";
+		String descricao = "Monitor 4k";
+	
+		
 		ConnectionFactory factory = new ConnectionFactory();
-		
-		try(Connection connection = factory.getConexao()){
-			
-		
+		Connection connection = factory.getConexao();
 		connection.setAutoCommit(false);
 		
 		try (
@@ -27,13 +28,12 @@ public class TesteInsercaoComParametro {
 		
 		connection.commit();
 		
-
+		stm.close();
 		connection.close();
 		}catch (Exception er) {
 			er.printStackTrace();
 			System.out.println("ROLLBACK EXECUTADO");
 			connection.rollback();
-		}
 		}
 	}
 
@@ -45,13 +45,11 @@ public class TesteInsercaoComParametro {
 		stm.execute();
 		
 		
-		try(ResultSet rst = stm.getGeneratedKeys()){
-			while(rst.next()) {
-				Integer id = rst.getInt(1);
-				System.out.println("O id criado foi: " + id);
-			}
+		ResultSet rst = stm.getGeneratedKeys();
+		while(rst.next()) {
+			Integer id = rst.getInt(1);
+			System.out.println("O id criado foi: " + id);
 		}
-		
 	}
 	
 }

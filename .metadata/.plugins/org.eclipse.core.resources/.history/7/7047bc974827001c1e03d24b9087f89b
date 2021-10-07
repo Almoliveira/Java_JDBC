@@ -11,10 +11,7 @@ public class TesteInsercaoComParametro {
 	public static void main(String[] args) throws SQLException {
 
 		ConnectionFactory factory = new ConnectionFactory();
-		
-		try(Connection connection = factory.getConexao()){
-			
-		
+		Connection connection = factory.getConexao();
 		connection.setAutoCommit(false);
 		
 		try (
@@ -27,13 +24,12 @@ public class TesteInsercaoComParametro {
 		
 		connection.commit();
 		
-
+		stm.close();
 		connection.close();
 		}catch (Exception er) {
 			er.printStackTrace();
 			System.out.println("ROLLBACK EXECUTADO");
 			connection.rollback();
-		}
 		}
 	}
 
