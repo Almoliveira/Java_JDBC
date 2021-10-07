@@ -16,7 +16,6 @@ public class TesteInsercaoComParametro {
 		
 		ConnectionFactory factory = new ConnectionFactory();
 		Connection connection = factory.getConexao();
-		//connection.setAutoCommit(false);
 		
 		PreparedStatement stm = connection.prepareStatement(
 				"INSERT INTO PRODUTO (nome, descricao) VALUES (?, ?)",
