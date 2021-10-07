@@ -1,8 +1,10 @@
 package br.com.alura.data;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
 
 public class TestaListagem {
 
@@ -11,9 +13,8 @@ public class TestaListagem {
 		ConnectionFactory conexao = new ConnectionFactory();
 		Connection con = conexao.getConexao();
 
-		PreparedStatement stm = 
-				con.prepareStatement("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
-		stm.execute();
+		Statement stm = con.createStatement();
+		stm.execute("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
 		
 		ResultSet rst = stm.getResultSet();
 		
