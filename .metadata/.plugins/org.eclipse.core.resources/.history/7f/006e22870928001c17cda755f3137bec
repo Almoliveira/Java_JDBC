@@ -31,7 +31,6 @@ public class ConnectionFactory {
 		combo.setUser(this.userName);
 		combo.setPassword(this.password);
 		
-		combo.setMaxPoolSize(15);
 		
 		this.datasource = combo;
 	}
