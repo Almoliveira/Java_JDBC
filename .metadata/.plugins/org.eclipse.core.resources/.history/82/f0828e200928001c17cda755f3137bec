@@ -23,7 +23,7 @@ public class ConnectionFactory {
 	public ConnectionFactory() {
 		this.connectionParam = "jdbc:mysql://localhost/loja_virtual?useTimezone=true&serverTimezone=UTC";
 		this.userName = "root";
-		this.password = "";
+		this.password = "WelkinGunther@12";
 		
 		
 		ComboPooledDataSource combo = new ComboPooledDataSource();
