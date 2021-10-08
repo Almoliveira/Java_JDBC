@@ -10,3 +10,5 @@
 1633506536665	Move compilation unit
 1633592220928	Extract method 'adicionarVariavel'
 1633681677353	Rename type 'PersistenciaProduto'
+1633682677917	Rename type 'TestaInsercaoComProduto'
+1633682738282	Rename local variable 'persitenciaProduto'

@@ -55,12 +55,9 @@ public class ProdutoDAO {
 							new Produto(rst.getInt(1)
 									,rst.getString(2)
 									,rst.getString(3));
-					produtos.add(produto);
-					
 				}
 			}
 		}
-		return produtos;
 	}
 }
 
