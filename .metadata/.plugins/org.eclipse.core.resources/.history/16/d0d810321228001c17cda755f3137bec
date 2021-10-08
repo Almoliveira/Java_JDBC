@@ -1,15 +1,17 @@
 package br.com.alura.data;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
+import java.sql.Statement;
+import java.sql.ResultSet;
 
 import br.com.alura.model.Produto;
 
 public class TestaInsercaoComProduto {
 
 	public static void main(String[] args) throws SQLException {
-		Produto comoda = new Produto("Fogão","Quatro bocas");
+		Produto comoda = new Produto("Sofá","Sofá formato L");
 
 		try(Connection connection = new ConnectionFactory().getConexao()){
 			ProdutoDAO persitenciaProduto 
