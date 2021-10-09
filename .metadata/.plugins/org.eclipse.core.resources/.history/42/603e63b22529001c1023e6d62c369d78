@@ -71,7 +71,7 @@ public class ProdutoDAO {
 		
 		try(PreparedStatement pstm = connection.prepareStatement(sql)){
 			
-			pstm.setInt(1, ct.getId());
+			
 			pstm.execute();
 			
 			try(ResultSet rst = pstm.getResultSet()){
