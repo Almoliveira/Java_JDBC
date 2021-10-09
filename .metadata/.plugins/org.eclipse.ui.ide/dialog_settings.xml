@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Andre\Documents\Andre\Programacao\JAVA\JDBC Aula\JDBC_AULA1\jdbc-aula-1-projeto-completo\loja-virtual-view-repository"/>
+			<item value="C:\Users\Andre\Documents\Andre\Programacao\JAVA\JDBC Aula\JDBC_AULA1\jdbc-aula-8-projeto-inicial\jdbc-aula-8-projeto-inicial\loja-virtual-view-repository"/>
 			<item value="C:\Users\Andre\Documents\Andre\Programacao\JAVA\JDBC Aula\JDBC_AULA1\jdbc-aula-1-projeto-completo\loja-virtual-repository"/>
 		</list>
 	</section>

@@ -4,6 +4,15 @@
 		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.e4.ui.importer.wizard"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
+			<item value="org.eclipse.buildship.ui.importwizards"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+			<item value="org.eclipse.m2e"/>
+			<item value="org.eclipse.oomph.importWizards"/>
+			<item value="org.eclipse.pde.ui.PluginDevelopment"/>
+			<item value="org.eclipse.team.ui.importWizards"/>
+			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
@@ -12,11 +21,13 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.egit.ui.RepositoriesView"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.create.getter.setter"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.self.encapsulate.field"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.commands"/>
@@ -25,8 +36,10 @@
 			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
+			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="git"/>
 			<item value="get and set"/>
 			<item value="get sett"/>
 			<item value="constructor"/>
