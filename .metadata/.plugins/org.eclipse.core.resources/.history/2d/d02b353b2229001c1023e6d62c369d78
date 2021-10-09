@@ -1,0 +1,31 @@
+package br.com.alura.data;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.alura.model.Categoria;
+
+public class CategoriaDAO {
+
+	private Connection connection;
+
+	public CategoriaDAO(Connection con) {
+		this.connection = connection;
+	}
+	
+	public List<Categoria> listar(){
+		List<Categoria> categorias = new ArrayList<>();
+		
+		String sql = "SELECT ID,l NOME FROM CATEGORIA";
+		
+		try(PreparedStatement pstm = connection.prepareStatement(sql)){
+			try(ResultSet rst = pstm.getResultSet()){
+				Categoria categoria 
+				= new Categoria(rst.getInt(1),rst,rst.getString(2));
+			}
+		}
+	}
+}
