@@ -63,7 +63,6 @@ public class CategoriaDAO {
 					
 					Produto produto = 
 							new Produto(rst.getInt(3),rst.getString(4) ,rst.getString(5));
-					ultima.adicionar(produto);
 				}
 			}
 		}

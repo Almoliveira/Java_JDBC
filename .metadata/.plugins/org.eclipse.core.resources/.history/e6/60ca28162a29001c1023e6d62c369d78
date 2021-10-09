@@ -1,6 +1,5 @@
 package br.com.alura.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Categoria {
@@ -12,6 +11,7 @@ public class Categoria {
 	public Categoria(Integer id, String nome) {
 		this.id = id;
 		this.nome = nome;
+		this.produtos = new List<>();
 	}
 
 	public Integer getId() {

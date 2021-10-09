@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.alura.model.Categoria;
-import br.com.alura.model.Produto;
 
 public class CategoriaDAO {
 
@@ -61,9 +60,7 @@ public class CategoriaDAO {
 						
 					}
 					
-					Produto produto = 
-							new Produto(rst.getInt(3),rst.getString(4) ,rst.getString(5));
-					ultima.adicionar(produto);
+					Produto produto = new Produto(rst.getInt(3),rst.getString(4) ,rst.getString(5));
 				}
 			}
 		}
